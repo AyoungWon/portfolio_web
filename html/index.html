@@ -8,29 +8,48 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
 <body>
-  <div class="wrapper">
-    <nav class="nav-bar">
-      <button><i class="fas fa-bars"></i></button>
-    </nav>
-    
-    <div class="hello-wrap">
-      <h2 >Hello, I'm</h2>
-      <div class="bottom">
-        <h2 class="emphasis">Front-end</h2>
-        <h2>Developer</h2>
+  <div class="page-wrapper" id="index">
+    <div class="index-wrap wrapper">
+      <div class="hello-wrap">
+        <h2 >Hello, I'm</h2>
+        <div class="bottom">
+          <h2 class="emphasis">Front-end</h2>
+          <h2>Developer</h2>
+        </div>
       </div>
-
-    </div>
-    <div class="main-wrap">
-      <h1 class="title">PORT</h1>
-      <div class="portrait-wrap">
-        <h2 class="name">WON A YOUNG</h2>
-        <img src="../img/portfolio.gif" alt="my_portrait" class="portrait">
+      <div class="main-wrap">
+        <h1 class="title">PORT</h1>
+        <div class="portrait-wrap">
+          <h2 class="name">WON A YOUNG</h2>
+          <img src="../img/portfolio.gif" alt="my_portrait" class="portrait">
+        </div>
+        <h1 class="title">FOLIO</h1>
       </div>
-      <h1 class="title">FOLIO</h1>
     </div>
   </div>
+  <div class="page-wrapper" id="about">
+    <div class="about-wrap wrapper">
+      about-wrap
+    </div>
+  </div>
+<div class="page-wrapper" id="work">
+  <div class="work-wrap wrapper">
+    work-wrap
+  </div>
+</div>
+  <nav class="nav-bar">
+    <button><i class="fas fa-bars"></i></button>
+  </nav>
+  <div class="navi-wrap">
+    <div class="slice slice1"></div>
+    <div class="slice slice2"></div>
+    <ul class="navis">
+      <li class="navi intro" id="about"><span>Introduce</span> <span>myself</span></li>
+      <li class="navi pf" id="work"><span>See</span> <span>my work</span></li>
+    </ul>
+    <button class="navi-exit"><i class="fa fa-times"></i></button>
+  </div>
 
-  
+<script src="../js/navi.js"></script>  
 </body>
 </html>
