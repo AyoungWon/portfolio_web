@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+/* 
+font-family: 'Fugaz One', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+
+color
+red #e94444
+yellow #fad541
+beige #ede5c7
+gray #686253
+dark #38342b
+
+ */
+* {
+  border: none;
+  padding: none;
+  margin: 0;
+  text-decoration: none;
+}
+
+.wrapper  {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ede5c7;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #38342b;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  
+}
+
+.nav-bar button {
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  
+}
+
+.nav-bar button:hover {
+  animation-name: emphasisAni;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.hello-wrap {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  text-align: right;
+  font-size: 1.75rem;
+}
+
+.hello-wrap .bottom {
+  display: flex;
+}
+
+.hello-wrap .emphasis {
+  font-size: 2.5rem;
+  animation-name: emphasisAni;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  color: #e94444;
+}
+
+.main-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  
+}
+
+.main-wrap .portrait-wrap {
+  border: 10px solid #38342b;
+  width: 320px;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.main-wrap .portrait {
+  height: 80%;
+  margin-top: auto;
+  -webkit-filter: grayscale(70%);
+	filter: gray;
+}
+
+.main-wrap .title {
+  font-size: 5rem;
+  font-family: 'Fugaz One', cursive;
+}
+
+.main-wrap .name {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  color: #e94444;
+  font-weight: 800;
+}
+
+
+@keyframes emphasisAni {
+  0% {transform: translateY(-10%);}
+  100% {transform: translateY(10%);}
+}
