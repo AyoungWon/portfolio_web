@@ -1,0 +1,97 @@
+/* 
+font-family: 'Fugaz One', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+
+color
+red #e94444
+yellow #fad541
+beige #ede5c7
+gray #686253
+dark #38342b
+
+ */
+ 
+
+
+.about-wrap {
+  color: #38342b;
+}
+
+.about-wrap p {
+  line-height: 140%;
+}
+
+ /************** greeting-wrap  **************/
+.greeting-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.greeting-wrap .img-wrap {
+  position: relative;
+  width: 45%;
+}
+
+.greeting-wrap .img-wrap img {
+  width: 100%;
+}
+
+.greeting-wrap h2 {
+  font-size: 6rem;
+  font-family: 'Fugaz One', cursive;
+}
+
+
+ /************** interest-wrap  **************/
+
+.interest-wrap {
+background-color: #ede5c7;
+}
+
+.interest-wrap .grid-wrap {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 25% 35% 35%;
+  justify-content: space-evenly;
+  gap: 2rem;
+  align-content: center;
+}
+
+
+.title-wrap {
+  text-align: right;
+  vertical-align: text-top;
+  border-right: 1px solid rgba(0,0,0,0.3);
+  padding-right: 1rem;
+  grid-row: 1/4;
+  width: 80%;
+}
+
+.title-wrap .number {
+  font-size: 10rem;
+  font-weight: bold;
+  line-height: 100%;
+  
+}
+
+.title-wrap .title {
+  font-size: 2rem;
+  font-family: 'Fugaz One', cursive;
+}
+
+.grid-wrap .content h3{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.span {
+  grid-column: 2/4;
+}
+
+
+
