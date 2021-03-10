@@ -1,0 +1,59 @@
+{
+  "stats": [{
+      "id": 1,
+      "name": "HTML",
+      "nameColor": "#e94444",
+      "gauge": "95%",
+      "gaugeColor": "#fad541"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "nameColor": "#e94444",
+      "gauge": "95%",
+      "gaugeColor": "#fad541"
+    },
+    {
+      "id": 3,
+      "name": "JavaScript",
+      "nameColor": "#e94444",
+      "gauge": "90%",
+      "gaugeColor": "#fad541"
+    },
+    {
+      "id": 4,
+      "name": "ReactJS",
+      "nameColor": "#e94444",
+      "gauge": "75%",
+      "gaugeColor": "#fad541"
+    },
+    {
+      "id": 5,
+      "name": "Node.Express",
+      "nameColor": "#fad541",
+      "gauge": "60%",
+      "gaugeColor": "#e94444"
+    },
+    {
+      "id": 6,
+      "name": "MongoDB/Mongoose",
+      "nameColor": "#fad541",
+      "gauge": "50%",
+      "gaugeColor": "#e94444"
+    },
+    {
+      "id": 7,
+      "name": "Photoshop",
+      "nameColor": "#ede5c7",
+      "gauge": "95%",
+      "gaugeColor": "#fad541"
+    },
+    {
+      "id": 8,
+      "name": "Ilustrator",
+      "nameColor": "#ede5c7",
+      "gauge": "85%",
+      "gaugeColor": "#fad541"
+    }
+  ]
+}
