@@ -1,0 +1,139 @@
+
+ /************** navi-wrap **************/
+.navi-wrap {
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  font-family: 'Fugaz One', cursive;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navi-wrap .slice {
+  background-color: #fff;
+  width: 100%;
+  height: 50%;
+  position: fixed;
+  transition: 0.5s;
+}
+
+.navi-wrap .slice.slice1 {
+  top: -50%;
+  transition: 0.5s;
+}
+
+.navi-wrap .slice.slice2 {
+  bottom: -50%;
+  transition: 0.5s;
+}
+
+.navi-wrap .navis {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #38342b;
+  text-align: center;
+  display: none;
+  opacity: 0;
+  transition: 0.5s;
+  list-style: none;
+}
+
+.navi-wrap .navis .navi {
+  cursor: pointer;
+}
+
+.navi-wrap .navis a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navi-wrap .navis .intro:hover span:nth-child(1),
+.navi-wrap .navis .pf:hover span:nth-child(1) {
+  color: #fad541;
+}
+
+.navi-wrap .navis .intro:hover span:nth-child(2),
+.navi-wrap .navis .pf:hover span:nth-child(2) {
+  color: #e94444;
+  ;
+}
+
+.navi-wrap .navi-exit {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #38342b;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.navi-wrap span {
+  pointer-events: none;
+}
+
+/************** contact-wrap **************/
+
+.contact-wrap {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 666;
+  width: 100px;
+  height: 100px;
+}
+
+.contact-wrap .img-wrap img {
+  position: relative;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.contact-wrap .open {
+opacity: 0;
+}
+
+.contact-wrap .img-wrap p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-30%);
+  font-family: 'Fugaz One', cursive;
+}
+
+.contact-wrap:hover .open {
+  opacity: 1;
+}
+.contact-wrap:hover .info-wrap {
+  display: block;
+}
+.contact-wrap:hover .close {
+  opacity: 0;
+}
+
+.contact-wrap .info-wrap {
+  padding: 1rem;
+  position: absolute;
+  top: -150%;
+  left: -150%;
+  background-color: #f8f8f8;
+  border: 4px solid black;
+  border-radius: 4px;
+  display: none;
+}
+
+.info-wrap .title {
+  font-family: 'Fugaz One', cursive;
+}
+
+.info-wrap h4 {
+  margin-top: 0.5rem;
+}
+
+
+
