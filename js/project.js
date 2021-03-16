@@ -9,6 +9,7 @@ if(projectWrap){
   const slideWidth = window.getComputedStyle(pjStage).width
   const descBtn = document.querySelector('.desc-btn')
 
+
   let now = 0
   let tar = 0
   let descView = false
@@ -23,9 +24,8 @@ if(projectWrap){
       pj.classList.add('pj')
       let html = `
       <div class="content-wrap">
-        <video width="100%" height="auto" autoplay loop muted controls >
-          <source src=${data.projects[i].videoURL}> 
-        </video>
+        <iframe class="pj-video" width="100%" height="100%" loop src="">
+        </iframe>
         <div class="desc-wrap">
           <div class="icon-wrap ">
             <button class="icon"><a href=${data.projects[i].demoURL}><i class="far fa-window-restore"></i></a></button>
@@ -33,18 +33,19 @@ if(projectWrap){
           </div>
           <h3 class="name element">${data.projects[i].name}</h3>
           <ul class="skill-wrap element">
-            ${data.projects[i].skills.map((item,index)=>`
-            <li class="skill">${item}</li>`)}
+            ${data.projects[i].skills.map((item)=>`
+            <li class="skill">${item}</li>`).join('')}
           </ul>
           <p class="desc element">${data.projects[i].desc}</p>
           <ul class="feature element">
-            ${data.projects[i].feature.map((item,index)=>`
-            <li class="skill">${item}</li>`)}
+            ${data.projects[i].feature.map((item)=>`
+            <li class="skill">- ${item}</li>`).join('')}
           </ul>
         </div>
       </div>`
       pj.innerHTML=html
       pjSlide.appendChild(pj)
+      videoStart()
     }
   }
   loadData('../json/project.json', function(text){
@@ -52,6 +53,11 @@ if(projectWrap){
       pjDomMaking(pjData)
   });
 
+  const videoStart = () => {
+    const pjs = document.querySelectorAll('.pj')
+    pjs[now].querySelector('.pj-video').setAttribute('src',`${pjData.projects[now].videoURL}?autoplay=1&mute=1`)
+
+  }
 
   const slideAni = () => {
     tar = now * -(slideWidth.substr(0, slideWidth.length-2))
@@ -62,11 +68,13 @@ if(projectWrap){
   const onClickBtPrev = () => {
     now = (now == 0) ? 4 : now -1
     slideAni()
+    videoStart()
 
   }
   const onClickBtNext = () => {
     now = (now == 4) ? 0 : now +1
     slideAni()
+    videoStart()
   }
 
   const onClickDescBtn = () => {
