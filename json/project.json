@@ -1,0 +1,63 @@
+{
+  "projects": [{
+      "id": 1,
+      "name": "Meety",
+      "videoURL": "https://www.youtube.com/embed/5YucE1_x3DQ",
+      "skills": ["ReactJS", "VanilaJS", "Redux", "socket.io", "WebRTC", "NodeJS", "ExpressJS", "MongoDB & Mongoose", "CSS"],
+      "desc": "MEETY 웹은 다른 설치 프로그램 필요 없이 1:1 화상 통화 및 채팅이 가능한 서비스입니다. ",
+      "feature": ["WebRTC와 Socket.io를 활용한 화상 통화 서비스", "Socket.io를 이용한 실시간 채팅 서비스", "Redux를 활용한 Auth관리", "MongoDB Atlas를 이용한 사용자 정보 관리"],
+      "demoURL": "",
+      "gitURL": ""
+    },
+    {
+      "id": 2,
+      "name": "POP Movie",
+      "videoURL": "https://www.youtube.com/embed/BaQYYrIMfUw",
+      "skills": ["ReactJS", "VanilaJS", "CSS", "Redux", "NodeJS", "ExpressJS", "MongoDB & Mongoose"],
+      "desc": "POP MOVIE는 현재 인기있는 영화 순위 리스트 및 영화 검색을 통한 영화의 상세 정보를 확인할 수 있습니다. 또한 마음에 드는 영화가 있다면 좋아하는 목록에 추가하여 관리할 수 있습니다.",
+      "feature": ["The Movie database API를 이용한 영화 데이터 수집 및 활용", "Redux를 활용한 Auth관리", "MongoDB Atlas를 이용한 사용자 정보 관리"],
+      "demoURL": "",
+      "gitURL": ""
+    },
+    {
+      "id": 3,
+      "name": "🎨Drawing",
+      "videoURL": "https://www.youtube.com/embed/GscKR8V7hoE",
+      "skills": ["HTML", "CSS", "VanilaJS"],
+      "desc": "드로잉 웹은 windows 운영체제에 기본적으로 들어있는 그림판을 웹으로 사용할 수 있도록 만든 웹 서비스입니다. 그림판의 기본적인 펜툴로 그리기, 도형그리기, 색 변경 등의 기능이 제공되며, 그리기 완료 후 해당 그림을 png파일로 저장할 수 있습니다.",
+      "feature": ["특징1", "특징2", "특징3"],
+      "demoURL": "",
+      "gitURL": ""
+    },
+    {
+      "id": 4,
+      "name": "테트리스",
+      "videoURL": "https://www.youtube.com/embed/_YKDsfHGASM",
+      "skills": ["HTML", "CSS", "VanilaJS"],
+      "desc": "자바스크립트를 공부하면서 만든 테트리스입니다 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nisi iusto amet ipsum obcaecati soluta consequuntur, ab numquam exercitationem odio recusandae aliquam ullam asperiores unde ipsam aut accusamus illo! Nemo.",
+      "feature": ["vanilaJS의 호출스택, 이벤트 루프를 활용한 테트리스 구현"],
+      "demoURL": "",
+      "gitURL": ""
+    },
+    {
+      "id": 5,
+      "name": "지뢰찾기",
+      "videoURL": "https://www.youtube.com/embed/xJw-81VwtYQ",
+      "skills": ["HTML", "CSS", "VanilaJS"],
+      "desc": "윈도우즈의 고전게임인 지뢰찾기를 자바스크립트를 공부하여 만들어 보았습니다.",
+      "feature": ["이중배열을 활영한 화면과 데이터 상태 연결"],
+      "demoURL": "",
+      "gitURL": ""
+    },
+    {
+      "id": 6,
+      "name": "Starbucks",
+      "videoURL": "https://www.youtube.com/embed/YlVP0t_mxd0",
+      "skills": ["HTML", "CSS", "VanilaJS", "JQuery"],
+      "desc": "프론트 개발 공부를하며 익힌 퍼블리싱 스킬을 이용하여 스타벅스 홈페이지를 리뉴얼해보았습니다.",
+      "feature": ["JSON을 이용한 동적인 HTML 생성", "JQuery와 JS를 활용한 슬라이드 ", "CSS를 활용한 반응형 웹페이지"],
+      "demoURL": "",
+      "gitURL": ""
+    }
+  ]
+}
