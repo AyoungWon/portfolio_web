@@ -36,6 +36,8 @@ const onNaviExitClick = () => {
 
   setTimeout(()=> {
     naviWrap.style.display = "none"
+    const contact = document.querySelector('.contact-wrap')
+    contact.style.display = "block"
   },300)
 
 }
@@ -47,6 +49,8 @@ wrappers.forEach(wrapper => {
 })
 const target = document.querySelector(`#${e.target.id}`)
 target.style.display="block"
+videoStart()
+descOpen()
 onNaviExitClick()
 }
 
