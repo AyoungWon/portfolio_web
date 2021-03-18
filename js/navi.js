@@ -25,7 +25,7 @@ setTimeout(()=> {
 },300)
 }
 
-const onNaviExitClick = () => {
+const onNaviExitClick = (e) => {
   sliceTop.style.top = '-50%'
   sliceBottom.style.bottom = '-50%'
   navi.forEach(navi => {
@@ -55,7 +55,7 @@ const target = document.querySelector(`#${e.target.id}`)
 target.style.display="block"
 videoStart()
 descOpen()
-onNaviExitClick()
+onNaviExitClick(e)
 }
 
 naviBar.addEventListener("click", onNavibarClick)
