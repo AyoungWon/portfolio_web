@@ -22,34 +22,41 @@
     },
     {
       "id": 4,
+      "name": "JQuery",
+      "nameColor": "#e94444",
+      "gauge": "80%",
+      "gaugeColor": "#fad541"
+    },
+    {
+      "id": 5,
       "name": "ReactJS",
       "nameColor": "#e94444",
       "gauge": "75%",
       "gaugeColor": "#fad541"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Node.Express",
       "nameColor": "#fad541",
       "gauge": "60%",
       "gaugeColor": "#e94444"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "MongoDB/Mongoose",
       "nameColor": "#fad541",
       "gauge": "50%",
       "gaugeColor": "#e94444"
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Photoshop",
       "nameColor": "#ede5c7",
       "gauge": "95%",
       "gaugeColor": "#fad541"
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "Ilustrator",
       "nameColor": "#ede5c7",
       "gauge": "85%",
