@@ -1,17 +1,7 @@
-let data;
+(()=>{
 const stats = document.querySelector('.stats')
+let statData;
 
-const loadData = (url, cb) => {
-    const Request = new XMLHttpRequest();
-    Request.overrideMimeType("application/json");
-    Request.open('GET', url);
-    Request.send();
-    Request.onreadystatechange = function() {
-      if (Request.readyState === 4 && Request.status == "200") {
-        cb(Request.responseText);
-      }
-    }
-  }
 
 const statDomMaking = (data) => {
   for(let i =0; i<data.stats.length; i++){
@@ -27,20 +17,23 @@ const statDomMaking = (data) => {
   }
 }
 loadData('../json/stat.json', function(text){
-    data = JSON.parse(text);
-    statDomMaking(data)
+    statData = JSON.parse(text);
+    statDomMaking(statData)
 });
 
 
-const onScroll = () => {
+const onScroll = (e) => {
   const scTop = window.document.documentElement.scrollTop;
   const winHei = window.innerHeight - 100
   const targetY = window.pageYOffset + stats.getBoundingClientRect().top;
 	if ((scTop + winHei) > targetY) {
     const gauge = document.querySelectorAll('.gauge')
-    for(let i =0; i< data.stats.length; i++){
-      gauge[i].style.width = data.stats[i].gauge 
+    for(let i =0; i< statData.stats.length; i++){
+      gauge[i].style.width = statData.stats[i].gauge 
     }
 	}
 }
+
 window.document.addEventListener('scroll', onScroll)
+
+})()
