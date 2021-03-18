@@ -36,10 +36,14 @@ const onNaviExitClick = () => {
 
   setTimeout(()=> {
     naviWrap.style.display = "none"
-    const contact = document.querySelector('.contact-wrap')
-    contact.style.display = "block"
+    if(e.target.id === "index"){
+      contact.style.display = "none"
+    }else{
+      const contact = document.querySelector('.contact-wrap')
+      contact.style.display = "block"
+    }
   },300)
-
+  
 }
 
 const onNaviClick = (e) => {
