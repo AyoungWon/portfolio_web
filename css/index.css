@@ -28,6 +28,7 @@ dark #38342b
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 0px;
+  -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
 }
 body {
   position: relative;
