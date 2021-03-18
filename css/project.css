@@ -16,7 +16,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-/*   overflow: hidden; */
+  overflow: hidden;
 }
 
 .pj-slide-wrap {
@@ -53,7 +53,6 @@
   width: 80%;
   height: 80%;
   margin: 5% auto;
-  background-color: rgba(0,0,0,0.7);
   position: relative;
   overflow: hidden;
 }
@@ -69,14 +68,16 @@
   height: 100%;
   background-color: rgba(0,0,0,0.6);
   color: #fff;
-  padding: 1rem;
+  padding: 1rem 2rem;
   position: absolute;
   transition: all 0.3s;
+  font-weight: 300;
 
 }
 
 .desc-wrap .name {
   font-size: 3rem;
+  color: #fad541;
 }
 
 .desc-wrap ul {
@@ -93,9 +94,15 @@
 
 .desc-wrap .skill-wrap .skill {
 margin: 0.25rem 0.5rem;
-background-color: rgb(255, 187, 0);
-padding: 4px 16px;
+padding: 2px 16px;
 border-radius: 4px;
+font-size: 200;
+border: 2px solid #fff;
+}
+
+.desc-wrap .feature {
+  list-style: circle;
+  padding-left: 1rem;
 }
 
 .desc-wrap .icon-wrap {

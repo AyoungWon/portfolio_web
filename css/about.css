@@ -11,10 +11,13 @@ dark #38342b
 
  */
 
-
+.page-wrapper#about {
+  display: none;
+}
 
 .about-wrap {
   color: #38342b;
+  background-color: #fdfaee;
 }
 
 .about-wrap p {
@@ -42,6 +45,10 @@ dark #38342b
 .greeting-wrap h2 {
   font-size: 6rem;
   font-family: 'Fugaz One', cursive;
+}
+
+.greeting-wrap .content {
+  width: 90%;
 }
 
 
@@ -111,7 +118,8 @@ dark #38342b
 }
 
 .stat-wrap .stats {
-  width: 80%;
+  width: 90%;
+  box-sizing: border-box;
 }
 
 .stat-wrap .stat {
@@ -121,7 +129,7 @@ dark #38342b
 }
 
 .stat-wrap .stat .stat-name {
-  flex: 25% 0 0;
+  flex: 30% 0 0;
   padding: 0 0.75rem;
   color: #f8f8f8;
   letter-spacing: 1px;
@@ -129,7 +137,7 @@ dark #38342b
 }
 
 .stat-wrap .stat .stat-graph {
-  flex: 75% 0 0;
+  flex: 70% 0 0;
   background-color: #ede5c7;
   padding: 0.25rem 0.25rem 0.25rem 0;
 }
